@@ -1,0 +1,20 @@
+.post{
+    border: 1px solid brown;
+    border-radius: 7px;
+    background-color: linen;
+    margin: 30px;
+    padding: 15px;
+}
+
+.post button{
+    margin: 5px;
+    padding: 5px 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+}
+
+.post button:hover{
+    background-color: rgb(230, 90, 90);
+}
