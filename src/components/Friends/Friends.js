@@ -1,9 +1,18 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Friend from '../Friend/Friend';
 
 const Friends = () => {
+    const friends = useLoaderData();
     return (
         <div>
-            <h2>I have nothing but friends..yey..!</h2>
+            <h2>I have nothing but friends..yey..! {friends.length}</h2>
+            {
+                friends.map(friend => <Friend
+                key={friend.id}
+                friend={friend}
+                ></Friend>)
+            }
         </div>
     );
 };

@@ -13,8 +13,13 @@ function App() {
           {path: '/home', element: <Home></Home> },
           {path: '/products', element: <Products></Products>},
           {path: '/about', element: <About></About> },
-          {path: '/friends', element: <Friends></Friends>}
+          {path: '/friends', 
+          loader: async () => {
+            return fetch('https://jsonplaceholder.typicode.com/users');
+          },
+          element: <Friends></Friends>}
         ] },
+        {path: '*', element:'This page not found: 404'}
   ])
   return (
     <div className="App">
