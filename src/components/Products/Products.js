@@ -4,7 +4,7 @@ import Header from '../Header/Header';
 const Products = () => {
     return (
         <div>
-            <Header></Header>
+            {/* <Header></Header> */}
             <h3>Products are here</h3>
         </div>
     );

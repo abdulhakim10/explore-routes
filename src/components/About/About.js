@@ -4,7 +4,7 @@ import Header from '../Header/Header';
 const About = () => {
     return (
         <div>
-            <Header></Header>
+            {/* <Header></Header> */}
             <h5>This is About Us</h5>
         </div>
     );
