@@ -7,3 +7,10 @@
 .header a:hover{
     background-color: rgb(202, 227, 236);
 }
+
+.active{
+    color: white;
+    background-color: skyblue;
+    border-radius: 3px;
+    margin: 5px;
+}
